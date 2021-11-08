@@ -1,3 +1,4 @@
+%%file CRRA.m
 function util = CRRA(cons, gamma)
 
 if gamma ~= 1
