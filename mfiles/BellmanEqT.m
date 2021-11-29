@@ -17,8 +17,7 @@ else
 end
 
 % ÅIŠú‚Ì‰¿’lŠÖ”Á”ï‚©‚ç“¾‚ç‚ê‚éŒø—p
-%vnext = CRRA(kprime^alpha, gamma);
-vnext = CRRA(kprime, gamma);
+vnext = CRRA(kprime^alpha, gamma);
 
 value = util + beta.*vnext;
 
