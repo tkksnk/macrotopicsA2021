@@ -10,9 +10,9 @@ kprime = wealth - cons;
 kprime = max(kgrid(1),kprime);
 
 % 次期の政策関数を線形補間
-%cnext = interp1(m.kgrid,cfcn,kprime,'linear','extrap');
+cnext = interp1(kgrid,cfcn0,kprime,'linear','extrap');
 % 次期の価値関数をスプライン補間
-cnext = interp1(kgrid,cfcn0,kprime,'spline');
+%cnext = interp1(kgrid,cfcn0,kprime,'spline');
 
 %% オイラー方程式
 res = (1/cons) - beta*(1/cnext)*(alpha*kprime.^(alpha-1) + (1.-delta));
